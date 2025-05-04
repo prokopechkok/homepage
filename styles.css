@@ -259,3 +259,58 @@ body {
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
+
+#secret-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#game-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background: #eee;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  user-select: none;
+}
+
+#status {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#close-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#close-btn:hover {
+  background: #111;
+}

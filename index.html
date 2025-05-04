@@ -7,6 +7,7 @@
     <title>Résumé</title>
   </head>
   <body>
+    <!-- Hello curious mind! If you're checking the code, let's build something cool together: prokopechkok@gmail.com -->
     <main>
       <div class="resume">
         <div class="container">
@@ -16,7 +17,29 @@
 
             <div class="contact_info_container fh">
               <div class="contact-info__block">
-                HTML, CSS, JavaScript, React
+                <div class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <button id="secret-button">Don't Click This Button</button>
+
+                    <div id="game-container">
+                      <div class="board" id="board">
+                        <!-- Cells will be created by JS -->
+                      </div>
+                      <div id="status">Player X's turn</div>
+                      <button id="close-btn">Close Game</button>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="contact-info__block contact-info__block--center">
@@ -236,5 +259,6 @@
         </div>
       </div>
     </main>
+    <script src="js/game.js"></script>
   </body>
 </html>
