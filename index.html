@@ -1,10 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <!-- Hello curious mind! If you're checking my code, and you want to know my alter ego, try to press my avatar for a few seconds ;) -->
+    <main>
+      <div class="resume">
+        <div class="container">
+          <div class="resume__block">
+            <h1 class="contact-info__header">Khrystyna Prokopechko</h1>
+            <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
+            <div class="contact_info_container fh">
+              <div class="contact-info__block">
+                <div class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <button id="secret-button">Don't Click This Button</button>
+
+                    <div id="game-container">
+                      <div class="board" id="board"></div>
+                      <div id="status">Player X's turn</div>
+                      <button id="close-btn">Close Game</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-info__block contact-info__block--center">
+                <img
+                  id="name"
+                  class="contact-info__avatar name"
+                  src="assets/photo1.jpg"
+                  alt="Avatar"
+                />
+              </div>
+              <div id="glitch" class="glitch">
+                <span>Lucky Me!</span>
+              </div>
+              <div class="contact-info__block">
+                <a href="" rel="author" class="contact-info__item">
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192
+        0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535
+        13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817
+        80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>Lviv, Ukraine</span>
+                </a>
+                <a
+                  href="mailto:prokopechkok@gmail.com"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      width="fit-content"
+                    >
+                      <path
+                        d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+                      />
+                    </svg>
+                  </div>
+                  <span>Mail me</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/khrystyna-prokopechko?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD17MmAk3Sd6YUBbIGjmlXg%3D%3D"
+                  rel="author"
+                  class="contact-info__item"
+                >
+                  <div class="contact-info__item-icon-wrapper">
+                    <svg
+                      class="contact-info__item-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9
+        480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4
+        416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96
+        102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1
+        243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9
+        54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2
+        0 79.7 44.3 79.7 101.9V416z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg
+                  class="intro__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7
+            24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0
+            26.5 21.5 48 48 48h128c26.5 0 48-21.5
+            48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64
+            64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6
+            32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5
+            48-48V304c0-26.5-21.5-48-48-48z"
+                  ></path>
+                </svg>
+              </div>
+              <p class="intro_text">
+                I'm Khrystyna, I develop user-friendly interfaces with clean,
+                maintainable code. I enjoy building responsive layouts and want
+                to improve performance optimization and UX skills. This resume
+                reflects my growth in HTML, CSS, and JavaScript, with a focus on
+                semantic structure and accessibility.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="skills">
+              <div>
+                <h3 class="skills__header">Soft Skills</h3>
+                <p class="skills__text">
+                  Accurate, Cooperative, Reliable, Determined, Cheerful
+                </p>
+              </div>
+              <div>
+                <h3 class="skills__header">Tech Skills</h3>
+                <ul
+                  class="skills__text experiences__company-project-responsibilities"
+                >
+                  <li>HTML5, CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Responsive / Adaptive Design</li>
+                  <li>REST API / Axios</li>
+                  <li>GIT / GitHub</li>
+                  <li>Parcel / Vite / Webpack</li>
+                  <li>React.js / Redux / TypeScript</li>
+                  <li>Node.js</li>
+                  <li>MangoDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="main-info fh">
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <div class="experiences__company">
+                  <div class="experiences__company-header info-box">
+                    <span class="experiences__company-header-durability"
+                      >2007 - Present</span
+                    >
+                    <h3 class="experiences__company-header-name">
+                      TM Stefanie L
+                    </h3>
+                  </div>
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role"
+                      >Self-employed / Management</span
+                    >
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Worked with distributors</li>
+                      <li>Promoted brand on social media</li>
+                      <li>Created and implemented a new brand</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info fv info-box">
+                <div class="additional-info fv">
+                  <div class="additional-info__education">
+                    <h3 class="additional-info__education-header">Education</h3>
+                    <ul class="education-list">
+                      <li>
+                        <div class="additional-info__education-university">
+                          <span
+                            class="additional-info__education-university-durability"
+                            >2023 - 2024</span
+                          >
+                          <h3
+                            class="additional-info__education-university-speciality"
+                          >
+                            Full-Stack Development
+                          </h3>
+                          <p class="additional-info__education-university-name">
+                            GoIT IT School
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="additional-info__education-university">
+                          <span
+                            class="additional-info__education-university-durability"
+                            >2001 - 2006</span
+                          >
+                          <h3
+                            class="additional-info__education-university-speciality"
+                          >
+                            Master's degree in International Economic Relations
+                          </h3>
+                          <p class="additional-info__education-university-name">
+                            Ivan Franko National University of Lviv
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="additional-info__languages">
+              <h3 class="additional-info__languages-header">Languages</h3>
+              <p class="additional-info__languages-item">English</p>
+              <p class="additional-info__languages-item">Ukrainian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/game.js"></script>
+    <script src="js/alterego.js"></script>
   </body>
 </html>
