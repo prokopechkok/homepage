@@ -14,7 +14,6 @@
           <div class="resume__block">
             <h1 class="contact-info__header">Khrystyna Prokopechko</h1>
             <h3 class="contact-info__sub-header">Full-Stack Developer</h3>
-
             <div class="contact_info_container fh">
               <div class="contact-info__block">
                 <div class="contact-info__item">
@@ -32,16 +31,13 @@
                     <button id="secret-button">Don't Click This Button</button>
 
                     <div id="game-container">
-                      <div class="board" id="board">
-                        <!-- Cells will be created by JS -->
-                      </div>
+                      <div class="board" id="board"></div>
                       <div id="status">Player X's turn</div>
                       <button id="close-btn">Close Game</button>
                     </div>
                   </div>
                 </div>
               </div>
-
               <div class="contact-info__block contact-info__block--center">
                 <img
                   class="contact-info__avatar"
@@ -49,7 +45,6 @@
                   alt="Avatar"
                 />
               </div>
-
               <div class="contact-info__block">
                 <a href="" rel="author" class="contact-info__item">
                   <div class="contact-info__item-icon-wrapper">
@@ -123,7 +118,7 @@
                       ></path>
                     </svg>
                   </div>
-                  <span>Khrystyna Prokopechko</span>
+                  <span>LinkedIn</span>
                 </a>
               </div>
             </div>
@@ -162,25 +157,29 @@
         <div class="container">
           <div class="resume__block">
             <div class="skills">
-              <h3 class="skills__header">Soft Skills</h3>
-              <p class="skills__text">
-                Accurate, Cooperative, Reliable, Determined, Cheerful
-              </p>
-              <h3 class="skills__header">Tech Skills</h3>
-              <ul
-                class="skills__text experiences__company-project-responsibilities"
-              >
-                <li>HTML5, CSS3</li>
-                <li>JavaScript</li>
-                <li>Responsive / Adaptive Design</li>
-                JavaScript
-                <li>REST API / Axios</li>
-                <li>GIT / GitHub</li>
-                <li>Parcel / Vite / Webpack</li>
-                <li>React.js / Redux / TypeScript</li>
-                <li>Node.js</li>
-                <li>MangoDB</li>
-              </ul>
+              <div>
+                <h3 class="skills__header">Soft Skills</h3>
+                <p class="skills__text">
+                  Accurate, Cooperative, Reliable, Determined, Cheerful
+                </p>
+              </div>
+              <div>
+                <h3 class="skills__header">Tech Skills</h3>
+                <ul
+                  class="skills__text experiences__company-project-responsibilities"
+                >
+                  <li>HTML5, CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Responsive / Adaptive Design</li>
+                  JavaScript
+                  <li>REST API / Axios</li>
+                  <li>GIT / GitHub</li>
+                  <li>Parcel / Vite / Webpack</li>
+                  <li>React.js / Redux / TypeScript</li>
+                  <li>Node.js</li>
+                  <li>MangoDB</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -190,7 +189,7 @@
               <div class="experiences">
                 <h3 class="experiences__header">Experience</h3>
                 <div class="experiences__company">
-                  <div class="experiences__company-header">
+                  <div class="experiences__company-header info-box">
                     <span class="experiences__company-header-durability"
                       >2007 - Present</span
                     >
@@ -198,7 +197,6 @@
                       TM Stefanie L
                     </h3>
                   </div>
-
                   <div class="experiences__company-project">
                     <span class="experiences__company-project-role"
                       >Self-employed / Management</span
@@ -213,47 +211,56 @@
                 </div>
               </div>
 
-              <div class="additional-info fv">
+              <div class="additional-info fv info-box">
                 <div class="additional-info fv">
                   <div class="additional-info__education">
                     <h3 class="additional-info__education-header">Education</h3>
-                    <div class="additional-info__education-university">
-                      <span
-                        class="additional-info__education-university-durability"
-                        >2023 - 2024</span
-                      >
-                      <h3
-                        class="additional-info__education-university-speciality"
-                      >
-                        Full-Stack Development
-                      </h3>
-                      <p class="additional-info__education-university-name">
-                        GoIT IT School
-                      </p>
-                    </div>
-                    <div class="additional-info__education-university">
-                      <span
-                        class="additional-info__education-university-durability"
-                        >2001 - 2006</span
-                      >
-                      <h3
-                        class="additional-info__education-university-speciality"
-                      >
-                        Master's degree in International Economic Relations
-                      </h3>
-                      <p class="additional-info__education-university-name">
-                        Ivan Franko National University of Lviv
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="additional-info__languages">
-                    <h3 class="additional-info__languages-header">Languages</h3>
-                    <p class="additional-info__languages-item">English</p>
-                    <p class="additional-info__languages-item">Ukrainian</p>
+                    <ul class="education-list">
+                      <li>
+                        <div class="additional-info__education-university">
+                          <span
+                            class="additional-info__education-university-durability"
+                            >2023 - 2024</span
+                          >
+                          <h3
+                            class="additional-info__education-university-speciality"
+                          >
+                            Full-Stack Development
+                          </h3>
+                          <p class="additional-info__education-university-name">
+                            GoIT IT School
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="additional-info__education-university">
+                          <span
+                            class="additional-info__education-university-durability"
+                            >2001 - 2006</span
+                          >
+                          <h3
+                            class="additional-info__education-university-speciality"
+                          >
+                            Master's degree in International Economic Relations
+                          </h3>
+                          <p class="additional-info__education-university-name">
+                            Ivan Franko National University of Lviv
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="additional-info__languages">
+              <h3 class="additional-info__languages-header">Languages</h3>
+              <p class="additional-info__languages-item">English</p>
+              <p class="additional-info__languages-item">Ukrainian</p>
             </div>
           </div>
         </div>

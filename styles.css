@@ -154,7 +154,12 @@ body {
   color: var(--secondary-text-color);
   text-align: justify;
 }
-
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
@@ -177,6 +182,12 @@ body {
   margin-bottom: 20px;
 }
 
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
 .experiences__company-header-durability {
   color: var(--durability-text-color);
   text-align: left;
@@ -186,8 +197,7 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
+
   text-align: left;
   margin-bottom: 20px;
 }
@@ -217,6 +227,13 @@ body {
 
 .additional-info {
   flex: 1 1 40%;
+}
+
+.education-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .additional-info__education {
@@ -263,7 +280,7 @@ body {
 #secret-button {
   padding: 12px 24px;
   font-size: 18px;
-  background: #ff4d4d;
+  background: var(--text-decoration-color);
   color: white;
   border: none;
   border-radius: 8px;
@@ -294,6 +311,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   user-select: none;
+  color: var(--text-decoration-color);
 }
 
 #status {
@@ -304,7 +322,7 @@ body {
 #close-btn {
   margin-top: 15px;
   padding: 8px 16px;
-  background: #333;
+  background: var(--text-decoration-color);
   color: #fff;
   border: none;
   border-radius: 6px;
